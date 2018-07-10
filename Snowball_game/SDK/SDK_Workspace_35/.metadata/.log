@@ -1,0 +1,69 @@
+!SESSION 2017-05-01 18:32:24.924 -----------------------------------------------
+eclipse.buildId=Release 12.4 Build SDK_MS4.81d
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_CH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\loureiro\Snowball\SDK\SDK_Workspace_35\
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-01 18:32:26.718
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2017-05-01 19:20:47.523 -----------------------------------------------
+eclipse.buildId=Release 12.4 Build SDK_MS4.81d
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_CH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\loureiro\Snowball\SDK\SDK_Workspace_35\
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-01 19:20:48.943
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-05-01 19:26:42.058
+!MESSAGE Indexed 'empty_application_bsp_0' (0 sources, 7 headers) in 0.19 sec: 0 declarations; 0 references; 7 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-05-01 19:26:42.480
+!MESSAGE Indexed 'snowball_impl_0' (0 sources, 20 headers) in 0.41 sec: 122 declarations; 214 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00 %)
+!SESSION 2017-05-03 16:01:09.894 -----------------------------------------------
+eclipse.buildId=Release 12.4 Build SDK_MS4.81d
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_CH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\loureiro\Snowball\SDK\SDK_Workspace_35\
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-03 16:01:11.235
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2017-05-08 15:30:28.301 -----------------------------------------------
+eclipse.buildId=Release 12.4 Build SDK_MS4.81d
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_CH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\loureiro\Snowball\SDK\SDK_Workspace_35\
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-08 15:30:29.720
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2017-05-08 15:33:52.314 -----------------------------------------------
+eclipse.buildId=Release 12.4 Build SDK_MS4.81d
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_CH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\loureiro\Snowball\SDK\SDK_Workspace_35\
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-08 15:33:53.686
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2017-05-17 13:11:31.910 -----------------------------------------------
+eclipse.buildId=Release 12.4 Build SDK_MS4.81d
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_CH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\loureiro\Snowball\SDK\SDK_Workspace_35\
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-17 13:11:33.181
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2017-05-17 19:05:06.859 -----------------------------------------------
+eclipse.buildId=Release 12.4 Build SDK_MS4.81d
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_CH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\loureiro\Snowball\SDK\SDK_Workspace_35\
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-17 19:05:08.138
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

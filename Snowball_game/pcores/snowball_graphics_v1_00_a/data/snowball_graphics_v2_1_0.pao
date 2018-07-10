@@ -1,0 +1,20 @@
+##############################################################################
+## Filename:          C:/Users/loureiro/Snowball/pcores/snowball_graphics_v1_00_a/data/snowball_graphics_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon May 01 15:56:26 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a proc_common_pkg vhdl
+lib proc_common_v3_00_a ipif_pkg vhdl
+lib proc_common_v3_00_a or_muxcy vhdl
+lib proc_common_v3_00_a or_gate128 vhdl
+lib proc_common_v3_00_a family_support vhdl
+lib proc_common_v3_00_a pselect_f vhdl
+lib proc_common_v3_00_a counter_f vhdl
+lib plbv46_slave_single_v1_01_a plb_address_decoder vhdl
+lib plbv46_slave_single_v1_01_a plb_slave_attachment vhdl
+lib plbv46_slave_single_v1_01_a plbv46_slave_single vhdl
+lib snowball_graphics_v1_00_a dvi_ctrl vhdl
+lib snowball_graphics_v1_00_a graphics_controller vhdl
+lib snowball_graphics_v1_00_a user_logic vhdl
+lib snowball_graphics_v1_00_a snowball_graphics vhdl

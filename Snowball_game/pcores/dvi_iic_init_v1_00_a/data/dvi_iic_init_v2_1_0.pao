@@ -1,0 +1,11 @@
+##############################################################################
+## Filename:          C:/Data/EDK/DSD13/components/MyProcessorIPLib/pcores/dvi_iic_init_v1_00_a/data/dvi_iic_init_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Apr 04 19:20:23 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib dvi_iic_init_v1_00_a iic_init verilog
+lib dvi_iic_init_v1_00_a user_logic vhdl
+lib dvi_iic_init_v1_00_a dvi_iic_init vhdl

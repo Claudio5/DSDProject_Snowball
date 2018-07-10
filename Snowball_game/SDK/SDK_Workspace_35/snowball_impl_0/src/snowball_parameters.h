@@ -1,0 +1,139 @@
+/*
+ * snowball_parameters.h
+ *
+ *  Created on: 8 mai 2017
+ *      Author: loureiro
+ */
+
+#ifndef SNOWBALL_PARAMETERS_H_
+#define SNOWBALL_PARAMETERS_H_
+
+#include <xil_io.h>
+
+#include "xparameters.h"
+#include "xbasic_types.h"
+
+/** Update Interrupt */
+#define UPDATE_RATE	(50) 		// We want to update the screen 50 times per second
+#define INTERRUPT_RATE (1000)	// The Interrupt is generated every millisecond (by the fixed interval timer)
+#define INTERRUPT_COUNT (INTERRUPT_RATE / UPDATE_RATE)
+
+//MUSIC TONES : half period in ticks : to convert : T/2 = 10^8/freq [ticks]
+#define DO1 95419
+#define RE1 85034
+#define MI1 75757
+#define FA1 71633
+#define SOL1 63775
+#define LA1 56818
+#define SI1 50607
+#define DO2 47709
+#define RE2 42517
+
+/** Button Definitions */
+#define LEFT_BUTTON_MASK (0x00000008)
+#define RIGHT_BUTTON_MASK (0x00000002)
+#define UP_BUTTON_MASK (0x00000001)
+#define DOWN_BUTTON_MASK (0x00000004)
+#define RESTART_BUTTON_MASK (0x00000010)
+
+/*Keyboard buttons*/
+#define LEFT_P1_1 (Xint32) 65
+#define LEFT_P1_2 (Xint32) 97
+#define LEFT_P2_1 (Xint32) 84
+#define LEFT_P2_2 (Xint32) 116
+#define RIGHT_P1_1 (Xint32) 115
+#define RIGHT_P1_2 (Xint32) 83
+#define RIGHT_P2_1 (Xint32) 85
+#define RIGHT_P2_2 (Xint32) 117
+#define HIT_P2_1 (Xint32) 121
+#define HIT_P2_2 (Xint32) 89
+#define HIT_P1_1 (Xint32) 119
+#define HIT_P1_2 (Xint32) 87
+
+
+/** Graphics Dimensions */
+#define SCREEN_WIDTH ((Xuint32)640)
+#define SCREEN_HEIGHT ((Xuint32)480)
+
+#define BALL_WIDTH ((Xuint32)20)
+#define BALL_HEIGHT ((Xuint32)20)
+#define PLAYER_HEIGHT ((Xuint32)32)
+#define PLAYER_WIDTH ((Xuint32)32)
+#define BASE_LEFT 280
+#define BASE_RIGHT 360
+#define WALL_LEFT 264
+#define WALL_RIGHT 376
+#define WALL_UP 248
+#define WALL_DOWN 312
+#define BALL_ACCELERATION 12
+#define BALL_SPEED 80
+#define PIXELS 3
+#define INCREMENT 0.2f
+#define RADIUS 9
+
+/** Movement Speeds */
+/* In Pixels per Update */
+#define BALL1X_SPEED (1)
+#define BALL1Y_SPEED (1)
+
+#define BALL2X_SPEED (1)
+#define BALL2Y_SPEED (1)
+
+/* Offset needs to be specified in bytes */
+#define PLAYER1_OFFSET (0)
+#define PLAYER2_OFFSET (4)
+#define BALL1_OFFSET (8)
+#define BALL2_OFFSET (12)
+#define BALL1X_OFFSET (16)
+#define BALL2X_OFFSET (20)
+#define BALL1Y_OFFSET (24)
+#define BALL2Y_OFFSET (28)
+#define ARROW1_ANGLE_OFFSET (32)
+#define ARROW2_ANGLE_OFFSET (36)
+#define HEALTH_PLAYER1_OFFSET (40)
+#define HEALTH_PLAYER2_OFFSET (44)
+
+/*Buzzer offsets*/
+#define ENABLE_OFFSET (0)
+#define COUNTER_OFFSET (4)
+
+
+/* We use the provided macros for memory access */
+#define SET_SNOWBALL_MEMORY(OFFSET, VALUE) Xil_Out32((XPAR_SNOWBALL_GRAPHICS_0_BASEADDR + OFFSET), VALUE)
+#define GET_SNOWBALL_MEMORY(OFFSET) Xil_In32((XPAR_SNOWBALL_GRAPHICS_0_BASEADDR + OFFSET))
+#define GET_PS2_KEYBOARD_MEMORY(OFFSET) Xil_In32((XPAR_PS2_KEYBOARD_0_BASEADDR + OFFSET))
+#define SET_BUZZER_MEMORY(OFFSET, VALUE) Xil_Out32((XPAR_BUZZER_SOUND_0_BASEADDR + OFFSET), VALUE)
+#define GET_BUZZER_MEMORY(OFFSET) Xil_In32((XPAR_BUZZER_SOUND_0_BASEADDR + OFFSET))
+
+/* Set the position of the graphics on the screen */
+#define setBall1X(XPOS) SET_SNOWBALL_MEMORY(BALL1X_OFFSET, XPOS)
+#define setBall1Y(YPOS) SET_SNOWBALL_MEMORY(BALL1Y_OFFSET, YPOS)
+#define setBall1(BOOL)	SET_SNOWBALL_MEMORY(BALL1_OFFSET,BOOL)
+#define setBall2(BOOL)	SET_SNOWBALL_MEMORY(BALL2_OFFSET,BOOL)
+#define setBall2X(XPOS) SET_SNOWBALL_MEMORY(BALL2X_OFFSET, XPOS)
+#define setBall2Y(YPOS) SET_SNOWBALL_MEMORY(BALL2Y_OFFSET, YPOS)
+#define setPlayer1X(XPOS) SET_SNOWBALL_MEMORY(PLAYER1_OFFSET, XPOS)
+#define setPlayer2X(XPOS) SET_SNOWBALL_MEMORY(PLAYER2_OFFSET, XPOS)
+#define setHealthBar1(HEALTH) SET_SNOWBALL_MEMORY(HEALTH_PLAYER1_OFFSET, HEALTH)
+#define setHealthBar2(HEALTH) SET_SNOWBALL_MEMORY(HEALTH_PLAYER2_OFFSET, HEALTH)
+#define setArrowAngle1(ANGLE) SET_SNOWBALL_MEMORY(ARROW1_ANGLE_OFFSET, ANGLE)
+#define setArrowAngle2(ANGLE) SET_SNOWBALL_MEMORY(ARROW2_ANGLE_OFFSET, ANGLE)
+
+/*Buzzer set*/
+#define setEnable(ENABLE) SET_BUZZER_MEMORY(ENABLE_OFFSET,ENABLE)
+#define setCounter(COUNTER) SET_BUZZER_MEMORY(COUNTER_OFFSET,COUNTER)
+
+
+/* Read the position of the graphics on the screen */
+#define getBall1X(XPOS_OFFSET) GET_SNOWBALL_MEMORY(BALL1X_OFFSET)
+#define getBall1Y(YPOS_OFFSET) GET_SNOWBALL_MEMORY(BALL1Y_OFFSET)
+#define getBall2X(XPOS_OFFSET) GET_SNOWBALL_MEMORY(BALL2X_OFFSET)
+#define getBall2Y(YPOS_OFFSET) GET_SNOWBALL_MEMORY(BALL2Y_OFFSET)
+#define getPlayer1X(XPOS_OFFSET) GET_SNOWBALL_MEMORY(PLAYER1_OFFSET)
+#define getArrowAngle1(ANGLE_OFFSET) GET_SNOWBALL_MEMORY(ARROW1_ANGLE_OFFSET)
+
+/*Read Keyboard*/
+#define getAsciiNew(OFFSET) GET_PS2_KEYBOARD_MEMORY(OFFSET)
+#define getAsciiCode(OFFSET) GET_PS2_KEYBOARD_MEMORY(OFFSET)
+
+#endif /* SNOWBALL_PARAMETERS_H_ */

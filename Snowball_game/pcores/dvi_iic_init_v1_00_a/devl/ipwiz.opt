@@ -1,0 +1,7 @@
+-batch 
+-create dvi_iic_init 
+-ver 1.00.a 
+-dir "C:\Data\EDK\DSD13\components\MyProcessorIPLib" 
+-lang vhdl 
+-bus plbv46 s 
+-xps 

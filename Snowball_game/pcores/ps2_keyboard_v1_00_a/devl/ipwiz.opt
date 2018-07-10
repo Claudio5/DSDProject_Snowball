@@ -1,0 +1,8 @@
+-batch 
+-create ps2_keyboard 
+-ver 1.00.a 
+-dir "C:\Users\loureiro\Snowball" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 8 
+-xps 
